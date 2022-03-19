@@ -1,0 +1,133 @@
+.tagline {
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.tagline__enum {
+  padding: 0;
+  border-top: solid 1px @gray2;
+  padding: 0 17px;
+  width: 255px;
+  padding-top: 30px;
+  padding-bottom: 16px;
+  display: block;
+
+  &:first-child {
+    border-top: solid 1px @gray2;
+
+    @media (min-width: @tablet-width) {
+      width: 180px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 43px 50px 52px 50px;
+      text-align: center;
+      width: 300px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 147px;
+    padding: 0;
+    padding-top: 43px;
+    padding-right: 70px;
+    padding-left: 23px;
+    padding-bottom: 42px;
+
+    &:last-child {
+      padding-left: 60px;
+    }
+
+    &:first-child {
+      padding-left: 52px;
+    }
+   
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 43px 60px 63px 60px;
+    text-align: center;
+    width: 275px;
+    
+  }
+
+}
+
+.tagline__advantages {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+
+
+  @media (min-width: @tablet-width) {
+    width: 120px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 24px;
+  }
+}
+
+.tagline__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.tagline__number {
+  line-height: 21px;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 14px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 1px;
+    background-color: @black;
+    position: relative;
+    top: -4px;
+    left: -4px;
+    vertical-align: auto;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 1px;
+    background-color: @black;
+    position: relative;
+    top: -4px;
+    left: 4px;
+    vertical-align: auto;
+  }
+}
+
+.tagline__number:nth-child(2) {
+  margin-top: 12px;
+  margin-bottom: 22px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 26px;
+  }
+}
+
+.tagline__number:nth-last-child(3) {
+  margin-top: 12px;
+  margin-bottom: 14px;
+}
+.tagline--br{
+  display: none;
+  
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import "style.less";
+@import "header.less";
+@import "nav.less";
+@import "menu.less";
+@import "main.less";
+@import "description.less";
+@import "features.less";
+@import "tagline.less";
+@import "subtitle.less";
+@import "footer.less";
+@import "social.less";
+@import "page.less";
+@import "form.less";
+@import "number.less";
+@import "map.less";
+
+@import "common.less";
+@import "content.less";
+@import "aside.less";
+@import "fieldset.less";
+@import "radio.less";
+@import "feedback.less";
+@import "checkbox.less";
+@import "dropdown.less";
+
+@import "heading.less";
+@import "welcome.less";
+@import "figure.less";
+@import "figcaption.less";
+@import "player.less";
+
+//--------color---------//
+@blue: #81B3D2;
+@blue2: #669EC0;
+@blue3: #5496BD;
+@blue4: #678fa8;
+@black: #000000;
+@black2: #5C6870;
+@black3: #333333;
+@white: #FFFFFF;
+@white2: #EEEEEE;
+@gray: #333333;
+@gray2: #D6D6D6;
+@gray3: #F2F2F2;
+@gray4: #E5E5E5;
+@gray5: #E6E6E6;
+@gray6: #D5D5D5;
+@gray7: #a3a3a3;
+@activ: #766357;
+@hover: #604E43;
+
+//---------Viewport--------//
+@mobile-width: 320px;
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
+//-------Retina-------/
+
+p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+video {
+  outline: none;
+}
+
+.item--br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+//--------index--------//
+.index {
+  font-family: "PT Sans", "Arial", Sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  min-width: 320px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  background: @white;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+
+//--------form-------//
+.list {
+  font-family: "PT Sans", "Arial", Sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  min-width: 320px;
+  margin: 0 auto;
+  background: @white;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+//--------catalog--------------//
+.catalog {
+  font-family: "PT Sans", "Arial", Sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  min-width: 320px;
+  margin: 0 auto;
+  background: @white;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

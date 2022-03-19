@@ -1,0 +1,106 @@
+.form {
+  width: 374px;
+  @media (min-width: @desktop-width) {
+    width: 378px;
+  }
+}
+
+.form__block {
+  display: flex;
+  margin-bottom: 29px;
+  position: relative;
+}
+
+.form__label {
+  flex-basis: 50%;
+  line-height: 38px;
+  position: relative;
+
+}
+
+.form__date__block {
+  flex-basis: 100%;
+  line-height: 38px;
+  position: relative;
+}
+
+.form__date {
+  background-color: @white;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 7px;
+  box-sizing: border-box;
+
+  &:focus {
+    background-color: @gray3;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: @gray3;
+    outline: none;
+  }
+
+  &:active {
+    background-color: @white;
+  }
+}
+
+.form__calendar {
+  border: 0;
+  cursor: pointer;
+  //background: url(../img/calendar.svg) no-repeat;
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  background-color: transparent;
+}
+
+.form__button {
+  fill: @gray7;
+  padding: 0;
+
+  &:focus {
+    fill: @blue;
+  }
+
+  &:hover {
+    fill: @blue;
+  }
+
+  &:active {
+    fill: @black;
+  }
+}
+
+
+.form__button--index {
+  padding: 17px 150px;
+  color: @white;
+  background-color: @blue;
+  cursor: pointer;
+  margin-top: 60px;
+  width: 100%;
+  border: 0;
+  font-size: 21px;
+  text-transform: uppercase;
+  line-height: 26px;
+
+  &:focus {
+    color: @white;
+    background-color: #669EC0;
+  }
+
+  &:hover {
+    color: @white;
+    background-color: #669EC0;
+  }
+
+  &:active {
+    color: @white;
+    background-color: #5496BD;
+  }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!--<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">-->
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="index ">
+<header class="header">
+  <nav class="nav">
+    <button class="nav__burger nav__img"></button>
+    <ul class="menu menu__swipe">
+      <li class="menu__item">
+        <a class="menu__text menu__text--active" href="#">Главная</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__text" href="catalog.html">Фото и видео</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__text" href="form.html">Форма Отзыва</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__text" href="https://htmlacademy.ru/study">HTML ACADEMY</a>
+      </li>
+      <li class="menu__item menu__item--logo">
+        <a class="menu__logo ">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/logotype-mobile.svg">
+            <source media="(max-width: 1200px)" srcset="./img/logotype-mobile.svg">
+            <source media="(min-width: 1200px)" srcset="./img/logotype-desktop.svg">
+            <img class="header__img" src="./img/logotype-mobile.svg" width="800" height="256" alt="седона">
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="header__block ">
+    <img class="header__sedona " src="./img/text-index__mobile.svg" width="282" height="214" alt="добро пожаловать">
+  </div>
+</header>
+<main>
+  <section>
+    <div class="main main--sedona">
+      <h1 class="main__heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <h2 class="main__tital">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+    </div>
+
+    <div class="main main--picture">
+      <div class="description">
+        <h2 class="description__link">Настоящий <br class="item--br">городок</h2>
+        <p class="description__text">№1</p>
+        <p class="description__items">Седона не атракцион для туристов, там течет своя жизнь</p>
+      </div>
+      <div class="description__img">
+        <picture>
+          <source media="(max-width: 767px)"
+                  srcset="./img/photo-city_mobile.jpg 1x, ./img/photo-city_mobile@2x.jpg 2x">
+          <source media="(max-width: 1200px)"
+                  srcset="./img/photo-city_tablet.jpg 1x, ./img/photo-city_tablet@2x.jpg 2x">
+          <source media="(min-width: 1200px)"
+                  srcset="./img/photo-city_desktop.jpg 1x, ./img/photo-city_desktop@2x.jpg 2x">
+          <img class="main__img" src="./img/photo-city_tablet.jpg" width="800" height="256" alt="седона">
+        </picture>
+      </div>
+    </div>
+    <div class="main main--features">
+      <ul class="features">
+        <li class="features__item ">
+          <i class="features__icon">
+            <svg class="features__img">
+              <use href="sprite.svg#home"></use>
+            </svg>
+          </i>
+          <div class="features__block">
+            <h3 class="features__heading">Жилье</h3>
+            <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+        </li>
+        <li class="features__item ">
+          <i class="features__icon">
+            <svg class="features__img">
+              <use href="sprite.svg#souvenirs"></use>
+            </svg>
+          </i>
+          <div class="features__block">
+            <h3 class="features__heading">СУВЕНИРЫ</h3>
+            <p class="features__text">Не только китайского,<br class="features--br__text"> но и местного производства!
+            </p>
+          </div>
+        </li>
+        <li class="features__item ">
+          <i class="features__icon">
+            <svg class="features__img">
+              <use href="sprite.svg#burger"></use>
+            </svg>
+          </i>
+          <div class="features__block">
+            <h3 class="features__heading">ЕДА</h3>
+            <p class="features__text">Всегда заказывайте <br class="features--br"> фирменный бургер,<br
+              class="features--br__item"> вы не <br class="features--br"> разочаруетесь!</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="main main--bridge">
+      <div class="description description--order">
+        <h2 class="description__link">Там есть <br class="item--br"> мост дьявола</h2>
+        <p class="description__text">№2</p>
+        <p class="description__items description__items--text">Да, по нему можно пройти! Если вы осмелитесь, конечно
+        </p>
+      </div>
+      <div class="description__img">
+        <picture>
+          <source media="(max-width: 767px)"
+                  srcset="./img/photo-bridge_mobile_.jpg 1x, ./img/photo-bridge_mobile@2x.jpg 2x">
+          <source media="(max-width: 1200px)"
+                  srcset="./img/photo-bridge_tablet.jpg 1x, ./img/photo-bridge_tablet@2x.jpg 2x">
+          <source media="(min-width: 1200px)"
+                  srcset="./img/photo-bridge_desktop.jpg 1x, ./img/photo-bridge_desktop@2x.jpg 2x">
+          <img class="main__img" src="./img/photo-bridge_mobile_.jpg" width="800" height="256" alt="каньон">
+        </picture>
+      </div>
+    </div>
+    <div class="main main--tagline">
+      <ul class="tagline">
+        <li class="tagline__enum ">
+          <h3 class="tagline__advantages">небольшая площадь</h3>
+          <p class="tagline__number">№3</p>
+          <p class="tagline__text">ВСЕ интересные места находятся очень близко</p>
+        </li>
+        <li class="tagline__enum ">
+          <h3 class="tagline__advantages ">красивая дорога</h3>
+          <p class="tagline__number">№4</p>
+          <p class="tagline__text">Eхать в седону из лас-вегаса совсем <br class="tagline--br"> не скучно!</p>
+        </li>
+        <li class="tagline__enum ">
+          <h3 class="tagline__advantages">мало туристов</h3>
+          <p class="tagline__number">№5</p>
+          <p class="tagline__text">большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="subtitle">
+      <h4 class="subtitle__text">Заинтерисовались?</h4>
+      <p class="subtitle__lead">Укажите предполагаемые даты поездки,
+        <br class="item--br"> и мы покажем вам лучшие предложения гостиниц в
+        седоне</p>
+      <div class="subtitle__block">
+        <button class="subtitle__link">Найти гостиницу</button>
+        <div class="subtitle__btn subtitle__btn--index">
+          <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="form__block">
+              <label class="form__label" for="date">Дата заезда:</label>
+              <div class="form__date__block">
+                <input class="form__date" id="date" name="arrival_date" value="24 апреля 2017">
+                <button class="form__calendar">
+                  <svg class="form__button" width="21" height="23" viewBox="0 0 21 23"
+                       fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                          d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"/>
+                    <path clip-rule="evenodd"
+                          d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="form__block">
+              <label class="form__label" for="date__text">Дата выезда:</label>
+              <div class="form__date__block">
+                <input class="form__date" id="date__text" name="date_of_departure" value="4 июля 2017">
+                <button class="form__calendar">
+                  <svg class="form__button" width="21" height="23" viewBox="0 0 21 23"
+                       fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                          d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"/>
+                    <path clip-rule="evenodd"
+                          d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="number">
+              <div class="number__block">
+                <label class="number__people" for="adults">Взрослые:</label>
+                <div class="number__quantity">
+                  <button class="number__button__minus">
+                  </button>
+                  <input class="number__people__block" id="adults" name="Adults" min="1" value="2">
+                  <button class="number__button__plus">
+                  </button>
+                </div>
+              </div>
+              <div class="number__block--index">
+                <label class="number__baby" for="children">Дети:</label>
+                <div class="number__quantity">
+                  <button class="number__button__minus">
+                  </button>
+                  <input class="number__people__block" id="children" name="children" value="0">
+                  <button class="number__button__plus">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="form__button--index" type="submit">Найти</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="map">
+      <iframe class="map__inframe"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52380.964653523035!2d-111.79857245678534!3d34.8609938432754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1612892890732!5m2!1sru!2sru"
+              width="320" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer footer--index">
+    <div class="footer__visitsedona">
+      <a>#visitsedona</a>
+    </div>
+    <ul class="social">
+      <li class="social__block">
+        <a href="https://twitter.com" class="social__link--tw social__link"></a>
+      </li>
+      <li class="social__block">
+        <a href="https://ru-ru.facebook.com" class="social__link--fb social__link"></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com" class="social__link--yt social__link"></a>
+      </li>
+    </ul>
+    <div class="page">
+      <p class="page__more">Разработано</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <svg class="page__academ" width="27" height="35" viewBox="0 0 27 35" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+<script src="./js/index.js"></script>
+<script src="./js/script.js"></script>
+<script>
+
+
+</script>
+</body>
+
+</html>

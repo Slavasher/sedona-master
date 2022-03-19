@@ -1,0 +1,132 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 650px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+}
+
+
+.content__item {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-top: solid 1px @gray2;
+
+  &:last-child {
+    border-top: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    width: 285px;
+
+    &:nth-child(1) {
+      order: 2;
+      margin: 0;
+      border-left: solid 1px @gray2;
+      padding-left: 9%;
+      width: 41%;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+      width: 100%;
+    }
+
+    &:nth-child(3) {
+      order: 1;
+      margin: 0;
+      width: 40%;
+    }
+
+    &:nth-child(4) {
+      width: 100%;
+      order: 4;
+
+    }
+
+    &:nth-child(5) {
+      width: 100%;
+      order: 5;
+
+
+    }
+
+    &:nth-child(6) {
+      order: 6;
+      width: 100%;
+
+
+    }
+  }
+}
+
+.content__legend {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 55px;
+  
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-bottom: 59px;
+  }
+}
+.content__legend--item{
+  @media (min-width: @desktop-width){
+    margin-left: 81px;
+  }
+}
+.content__legend--text {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+    &::before {
+      content: "";
+      flex-grow: 1;
+      width: 123px;
+      height: 1px;
+      background-color: @gray2;
+      margin-right: 35px;
+
+    }
+
+    &::after {
+      content: "";
+      flex-grow: 1;
+      width: 123px;
+      height: 1px;
+      background-color: @gray2;
+      margin-left: 35px;
+    }
+  }
+}
+

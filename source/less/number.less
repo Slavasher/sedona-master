@@ -1,0 +1,131 @@
+.number {
+  display: grid;
+}
+.number__block {
+  display: flex;
+}
+
+.number__people {
+  margin-right: 48px;
+  padding-top: 9px;
+  font-weight: 700;
+  padding-left: 2px;
+  line-height: 26px;
+}
+
+.number__quantity {
+  height: 100%;
+  display: flex;
+  padding-top: 6px;
+}
+
+.number__button__minus {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 38px;
+  border: 0;
+  cursor: pointer;
+  background-color: @gray4;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 15px;
+    width: 11px;
+    height: 3px;
+    background-color: @gray7;
+    cursor: pointer;
+  }
+
+  &:focus::before {
+    background-color: @black;
+  }
+
+  &:hover::before {
+    background-color: @black;
+  }
+
+  &:active::before {
+    background-color: @blue;
+  }
+}
+
+.number__people__block {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  background-color: @gray5;
+  width: 36px;
+}
+
+.number__block--index {
+  display: flex;
+  margin-top: 10px;
+}
+
+.number__baby {
+  margin-right: 83px;
+  padding-top: 8px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.number__button__plus {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 38px;
+  border: 0;
+  background-color: @gray7;
+  vertical-align: top;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 15px;
+    width: 11px;
+    height: 3px;
+    background-color: @gray7;
+  }
+
+  &:hover::before {
+    background-color: @black;
+  }
+
+  &:focus::before {
+    background-color: @black;
+  }
+
+  &:active::before {
+    background-color: @blue;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 11px;
+    right: 16px;
+    width: 3px;
+    height: 11px;
+    background-color: @gray7;
+  }
+
+  &:focus::after {
+    background-color: @black;
+  }
+
+  &:hover::after {
+    background-color: @black;
+  }
+
+  &:active::after {
+    background-color: @blue;
+  }
+
+  background-color: #E5E5E5;
+}

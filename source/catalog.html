@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">-->
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="catalog">
+<header class="header">
+  <nav class="nav">
+    <button class="nav__burger nav__img"></button>
+    <ul class="menu menu__swipe">
+      <li class="menu__item">
+        <a class="menu__text " href="index.html">Главная</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__text menu__text--active" href="catalog.html">Фото и видео</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__text" href="form.html">Форма Отзыва</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__text" href="https://htmlacademy.ru/study">HTML ACADEMY</a>
+      </li>
+      <li class="menu__item menu__item--logo">
+        <a class="menu__logo " href="index.html">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/logotype-mobile.svg">
+            <source media="(max-width: 1200px)" srcset="./img/logotype-mobile.svg">
+            <source media="(min-width: 1200px)" srcset="./img/logotype-desktop.svg">
+            <img class="header__img" src="./img/logotype-mobile.svg" width="800" height="256" alt="седона">
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="header__block header__block--background">
+    <img class="header__sedona header__sedona--img" src="./img/form/sedona.svg" width="229" height="39"
+         alt="добро пожаловать">
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="heading">
+      <h1 class="heading__text">Фото и видео</h1>
+      <p class="">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        политике и экономике.
+      </p>
+    </div>
+    <ul class="figure ">
+      <li class="figure__list">
+        <div class="figure__block">
+          <div class="figure__photo figure__photo--img">
+            <picture>
+              <source media="(max-width: 767px)"
+                      srcset="./img/form/photo-1-mobile.jpg 1x, ./img/form/photo-1-mobile-2x.jpg 2x">
+              <source media="(max-width: 1200px)"
+                      srcset="./img/form/photo-1-tablet.jpg 1x, ./img/form/photo-1-tablet-2x.jpg 2x">
+              <source media="(min-width: 1200px)"
+                      srcset="./img/form/photo-1-desktop.jpg 1x, ./img/form/photo-1-mobile-2x.jpg 2x">
+              <img class="figure__img" src="./img/form/photo-1-desktop.jpg" width="1200" height="400"
+                   alt="неродные просторы">
+            </picture>
+          </div>
+          <figcaption class="figcaption">
+            <div class="figcaption__section">
+              <h3 class="figcaption__heading">неродные просторы</h3>
+              <span class="figcaption__text">Автор фото: Борис</span>
+            </div>
+            <div class="figcaption__item">
+              <svg class="figcaption__like">
+                <use href="sprite.svg#like"></use>
+              </svg>
+              <button class="figcaption__button">
+                1350
+              </button>
+            </div>
+          </figcaption>
+        </div>
+      </li>
+      <li class="figure__list">
+        <div class="figure__block">
+          <div class="figure__photo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/photo-2-mobile.jpg 1x, ./img/photo-2-mobile-2x.jpg 2x">
+              <source media="(max-width: 1200px)"
+                      srcset="./img/form/photo-2-tablet.jpg 1x, ./img/form/photo-2-tablet-2x.jpg 2x">
+              <source media="(min-width: 1200px)"
+                      srcset="./img/form/photo-2-desktop.jpg 1x, ./img/form/photo-2-desktop-2x.jpg 2x">
+              <img class="figure__img" src="./img/form/photo-2-mobile.jpg" width="400" height="267"
+                   alt="Местная растительность">
+            </picture>
+          </div>
+          <figcaption class="figcaption">
+            <div class="figcaption__section">
+              <h3 class="figcaption__heading">Местная растительность</h3>
+              <span class="figcaption__text">Автор фото: Сергей</span>
+            </div>
+            <div class="figcaption__item">
+              <svg class="figcaption__like">
+                <use href="sprite.svg#like"></use>
+              </svg>
+              <button class="figcaption__button"> 143</button>
+            </div>
+          </figcaption>
+        </div>
+      </li>
+      <li class="figure__list">
+        <div class="figure__block">
+          <div class="figure__photo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/photo-3-mobile.jpg 1x, ./img/photo-3-mobile-2x.jpg">
+              <source media="(max-width: 1200px)"
+                      srcset="./img/form/photo-3-tablet.jpg 1x, ./img/photo-3-tablet-2x.jpg">
+              <source media="(min-width: 1200px)"
+                      srcset="./img/form/photo-3-desktop.jpg 1x, ./img/photo-3-desktop-2x.jpg">
+              <img class="figure__img" src="./img/form/photo-3-mobile.jpg" width="400" height="267"
+                   alt="Дорога на север">
+            </picture>
+          </div>
+          <figcaption class="figcaption">
+            <div class="figcaption__section">
+              <h3 class="figcaption__heading">Дорога на север</h3>
+              <span class="figcaption__text">Автор фото: Петр</span>
+            </div>
+            <div class="figcaption__item">
+              <svg class="figcaption__like">
+                <use href="sprite.svg#like"></use>
+              </svg>
+              <button class="figcaption__button"> 96</button>
+            </div>
+          </figcaption>
+        </div>
+      </li>
+      <li class="figure__list">
+        <div class="figure__block">
+          <div class="figure__photo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/form/photo-4-mobile.jpg">
+              <source media="(max-width: 1200px)" srcset="./img/form/photo-4-tablet.jpg">
+              <source media="(min-width: 1200px)" srcset="./img/form/photo-4-desktop.jpg">
+              <img class="figure__img" src="./img/form/photo-4-mobile.jpg" width="400" height="267"
+                   alt="Мост дьявола">
+            </picture>
+          </div>
+          <figcaption class="figcaption">
+            <div class="figcaption__section">
+              <h3 class="figcaption__heading"> Мост дьявола</h3>
+              <span class="figcaption__text">Автор фото: Антон</span>
+            </div>
+            <div class="figcaption__item">
+              <svg class="figcaption__like">
+                <use href="sprite.svg#like"></use>
+              </svg>
+              <button class="figcaption__button">254</button>
+            </div>
+          </figcaption>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <div class="main main--doubt">
+      <div class="main__block main__block--catalog">
+        <h4 class="main__heading main__heading--text">Все еще сомневаетесь?</h4>
+        <p class="main__tital">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+          раз!</p>
+      </div>
+      <div class="player">
+        <div class="player__screen"></div>
+        <div class="player__controls">
+          <button class="player__item ">
+            <svg class="player__icon">
+              <use href="sprite.svg#replay"></use>
+            </svg>
+          </button>
+          <div class="player__progress"></div>
+          <button class="player__item ">
+            <svg class="player__icon">
+              <use href="sprite.svg#subtitles"></use>
+            </svg>
+          </button>
+          <button class="player__item ">
+            <svg class="player__icon">
+              <use href="sprite.svg#fullscreen"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+  </section>
+</main>
+<footer>
+  <div class="footer footer--form footer footer--catalog">
+    <div class="footer__visitsedona">
+      <a>#visitsedona</a>
+    </div>
+    <ul class="social">
+      <li class="social__block">
+        <a href="https://twitter.com" class="social__link--tw social__link"></a>
+      </li>
+      <li class="social__block">
+        <a href="https://ru-ru.facebook.com" class="social__link--fb social__link"></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com" class="social__link--yt social__link"></a>
+      </li>
+    </ul>
+    <div class="page">
+      <p class="page__more">Разработано</p>
+      <a class="page__academ" href="https://htmlacademy.ru/intensive/htmlcss">
+        <svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+<script src="./js/index.js"></script>
+<!--<script src="./js/script.js"></script>-->
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.feedback {
+  position: relative;
+  width: 280px;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.feedback__block {
+  min-height: 120px;
+  
+}
+
+.feedback__item {
+  width: 250px;
+  height: 120px;
+  padding: 10px 12px 29px 18px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: @gray3;
+  border: none;
+  outline-color: @gray4;
+
+  @media (min-width: @tablet-width) {
+    width: 608px;
+    padding: 19px 21px;
+    margin-top: 55px;
+  }
+  @media (min-width: @desktop-width){
+    width: 920px;
+    margin-top: 55px;
+    font-size: 16px;
+  }
+}

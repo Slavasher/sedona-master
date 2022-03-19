@@ -1,0 +1,52 @@
+.footer {
+  max-width: 150px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    max-width: 650px;
+    height: 51px;
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+    height: 48px;
+    display: flex;
+
+  }
+}
+
+.footer--index {
+  padding: 41px 0 23px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 36px 0;
+  }
+}
+
+.footer--form {
+  padding: 76px 0 23px 0;
+  @media (min-width: @tablet-width){
+    padding-top: 97px;
+  }
+}
+.footer--catalog{
+  @media (min-width: @tablet-width){
+    padding-top: 76px;
+    padding-bottom: 30px;
+  }
+  @media (min-width: @desktop-width){
+    padding-top: 122px;
+  }
+}
+
+.footer__visitsedona {
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+}
+

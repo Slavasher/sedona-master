@@ -1,0 +1,83 @@
+.header {
+  margin: 0;
+  padding: 0;
+}
+
+.header__logo {
+  position: relative;
+  display: block;
+  height: 58px;
+  line-height: 0;
+  border: none;
+  top: 0;
+  left: 50%;
+  z-index: 2000;
+  transform: translate(-50%);
+
+}
+
+.header__img {
+  display: block;
+  width: 102px;
+  height: 83px;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    width: 186px;
+    height: 96px;
+  }
+}
+
+.header__block {
+  margin: 0;
+  padding: 0 0;
+  background-color: #a0bcce;
+  background-repeat: no-repeat;
+  background-position: 50% bottom;
+  background-image: url(../img/botton-desktop.svg), url(../img/sedona-desktop.jpg);
+  background-size: auto, 901px 389px;
+  min-height: 389px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 518px;
+    background-size: auto, 1200px 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/botton-desktop.svg), url(../img/sedona-desktop2px.jpg);
+    }
+  }
+
+}
+
+.header__block--background {
+  min-height: 158px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 290px;
+  }
+  @media (min-width: @desktop-width) {
+    min-height: 300px;
+  }
+}
+
+
+.header__sedona {
+  margin: 0 auto;
+  display: block;
+  padding-top: 90px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 350px;
+    padding-top: 75px;
+  }
+}
+
+.header__sedona--img {
+  padding-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 95px;
+    height: 78px;
+  }
+}

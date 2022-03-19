@@ -1,0 +1,160 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
+}
+
+.main__img {
+  height: 260px;
+  max-width: 100%;
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+//----index.html--///
+.main--sedona {
+  padding: 0;
+  padding-top: 32px;
+  padding-bottom: 13px;
+  text-align: center;
+  width: 260px;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: 485px;
+    margin: 0 auto;
+    padding: 44px 0;
+    padding-bottom: 52px;
+  }
+  @media (min-width: @desktop-width){
+    padding:  0;
+    padding-top: 52px;
+    padding-bottom: 45px;
+  }
+}
+
+//----catalog.html--///
+.main--photo {
+  padding: 32px 22px;
+  border-bottom: 2px solid @gray4;
+}
+
+.main--picture {
+  background-color: @blue;
+  color: @white;
+  text-align: center;
+  background-image: url(../img/top__fon.svg);
+  background-repeat: no-repeat;
+  background-size: 768px 36px;
+  padding-top: 34px;
+  background-position: 50% top;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    padding: 0;
+    flex-direction: row;
+  }
+}
+
+.main--features {
+  @media (min-width: @desktop-width) {
+  }
+}
+
+.main--bridge {
+  background-color: @blue;
+  color: @white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    padding: 0;
+    flex-direction: row;
+
+  }
+}
+
+.main--tagline {
+  margin: 0;
+  font-size: 14px;
+  color: @gray;
+  background: @white2;
+}
+
+//----catalog.html--///
+.main--doubt {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 650px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}
+
+.main__block {
+  width: 266px;
+  margin: 0 auto;
+  padding: 32px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 445px;
+    padding: 58px 0;
+    margin-bottom: 0;
+  }
+}
+.main__block--catalog{
+  @media (min-width: @tablet-width){
+    padding-bottom: 78px;
+  }
+}
+
+.main__heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.main__heading--text {
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.main__tital {
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
